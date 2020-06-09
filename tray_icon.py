@@ -12,8 +12,8 @@ class TrayIcon(GObject.Object, Peas.Activatable):
     __gtype_name = 'TrayIcon'
     object = GObject.property(type=GObject.Object)
 
-    rhythmbox_icon = os.path.join(sys.path[0], "tray_stopped.png")
-    play_icon = os.path.join(sys.path[0], "tray_playing.png")
+    rhythmbox_icon = os.path.join(sys.path[0], "tray_stopped.svg")
+    play_icon = os.path.join(sys.path[0], "tray_playing.svg")
     menu = None
 
     def position_menu_cb(self, m, x, y=None, i=None):
